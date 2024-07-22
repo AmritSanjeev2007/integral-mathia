@@ -32,7 +32,7 @@ constexpr real solar_panel_in_ocean(real x)
     real k = 0.4;
     real A = 0.333;
     real r = 6371;
-    real pi = 3.14159265359;
+    real pi = 3.14159265359L;
 
     real sv=(f*(w-(k*w*sin(w*x))));
     
