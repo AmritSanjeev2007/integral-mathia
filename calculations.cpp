@@ -77,12 +77,12 @@ int main()
     std::cout << "Solar panel in the ocean: " << std::fixed << std::setprecision(12) << results[0]+results[1]+results[2]+results[3] << std::endl;
 
 // Land
-    std::thread t1(exec_land, 0, 1095, 0), t2(exec_land, 1096, 2191, 1), t3(exec_land, 2192, 3286, 2), t4(exec_land, 3287, 4380, 3);
+    std::thread t5(exec_land, 0, 1095, 0), t6(exec_land, 1096, 2191, 1), t7(exec_land, 2192, 3286, 2), t8(exec_land, 3287, 4380, 3);
 
-    t1.join();
-    t2.join();
-    t3.join();
-    t4.join();
+    t5.join();
+    t6.join();
+    t7.join();
+    t8.join();
 
     std::cout << "Solar panel on land: " << std::fixed << std::setprecision(12) << results[0]+results[1]+results[2]+results[3] << std::endl;
 }
