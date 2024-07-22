@@ -32,7 +32,7 @@ constexpr real solar_panel_in_ocean(real x)
     real k = 0.4;
     real A = 0.333;
     real r = 6371;
-    real pi = 3.14159265359L;
+    real pi = 3.1415926535897932384626433832795029L;
 
     real sv=(f*(w-(k*w*sin(w*x))));
     
@@ -47,7 +47,7 @@ constexpr real solar_panel_on_land(real x)
 {
     real A = 0.333;
     real r = 6371;
-    real pi = 3.14159265359;
+    real pi = 3.1415926535897932384626433832795029L;
     
     return  (max(cos(0.4091*cos((pi/4380)*x)+atan(tan(A)/cos((pi/12)*x))),0))
                 /(2*r*sqrt(sqr(sin(A))+sqr(cos(A)*cos((pi/12)*x))))
