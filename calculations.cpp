@@ -9,7 +9,7 @@ using function = real(real);
 
 constexpr real integral(function f, real start, real end) noexcept(true)
 {
-#define _INTERVAL_COUNT_ 100000000
+#define _INTERVAL_COUNT_ 100000000 // Number of rectangles
 
     real sum=0;
 
